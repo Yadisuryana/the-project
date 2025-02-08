@@ -1,100 +1,128 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d1d5db;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(214, 220, 221);
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
+/* Container */
 .container {
-    width: 800px;
+    width: 60%;
+    margin: 20px auto;
     background: white;
-    margin: 50px 0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
 }
 
-.header {
+/* About Section */
+.about {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #5d6d7e;
-    padding: 20px;
-    border-radius: 10px 10px 0 0;
-    color: white;
-}
-
-.header .title h1 {
-    font-size: 32px;
-    margin: 0;
-}
-
-.header .title span {
-    color: #a29bfe;
-}
-
-.header .job-title {
-    background: white;
-    color: #5d6d7e;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-weight: bold;
-}
-
-.photo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    border: 3px solid white;
-}
-
-.content {
-    display: flex;
-    padding: 20px;
-}
-
-.left, .right {
-    width: 50%;
-}
-
-.box {
-    background: #f0f0f0;
-    padding: 15px;
+    text-align: left;
     margin-bottom: 10px;
-    border-radius: 5px;
+    margin-top: 0px;
+    padding-right: 50px; 
+    padding: 10px 0;
+    background: linear-gradient(to right, #A1E3F9, #D1F8EF);
 }
 
-h2 {
-    color: #5d6d7e;
+.profile-img2 {
+    width: 120px; /* Batasi lebar */
+    height: auto; /* Menjaga rasio */
+    max-width: 100%; /* Agar tidak melebihi container */
+    max-height: 200px; /* Batasi tinggi */
+    object-fit: cover; /* Pastikan gambar mengisi bingkai tanpa distorsi */
+    border-radius: 10%; /* Membuat sudut bingkai melengkung */
+    display: block; /* Menampilkan sebagai blok */
+    margin-right: 140px; /* Tambahkan jarak ke kanan */
+}
+
+
+
+
+.about-text {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 200px;
+}
+
+.about-text h1 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.about-text p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Sections Layout */
+.section {
+    margin-bottom: 20px;
+}
+.section h2 {
+    background: linear-gradient(to right, #A1E3F9, #D1F8EF);
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Two Column Layout */
+.two-column {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.column {
+    width: 48%;
 }
 
-h2 i {
-    margin-right: 10px;
+.content-box {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
 }
 
+/* List Styles */
 ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
 }
-
-.skills {
-    text-align: center;
-    padding: 20px;
-    background: #5d6d7e;
-    color: white;
-    border-radius: 0 0 10px 10px;
+li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
 }
 
-.skill-list span {
-    display: inline-block;
-    background: white;
-    color: #5d6d7e;
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 20px;
-    font-weight: bold;
+/* Contact Section */
+.contact {
+    text-align: center;
+    background: linear-gradient(to right, #A1E3F9, #D1F8EF);
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact p {
+    font-weight: 400;
+    font-size: 16px;
 }
