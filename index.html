@@ -1,68 +1,154 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - [Nama Kamu]</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Online CV</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="title">
-                <h1><span>KETUT</span> SUSILO</h1>
-                <p class="job-title">Desainer Grafis</p>
+        <!-- Contact Info -->
+        <!-- <div class="contact-info">
+            <div class="info-box">
+                <i class="fas fa-phone"></i> 123-456-7890
             </div>
-            <div class="photo">
-                <img src="profil.jpg" alt="Foto Profil">
+            <div class="info-box">
+                <i class="fas fa-envelope"></i> hello@reallygreatsite.com
+            </div>
+        </div> -->
+        <!-- About Section -->
+        <br><br><hr>
+        <section class="about">
+            
+            <div class="about-text">
+                <h1>Yadi Suryana</h1>
+                <p>Front End Developer</p>
+            </div>
+            <img src="profil.jpg" alt="Profile Picture" class="profile-img2">
+        </section>
+        
+        <hr>
+
+        <!-- Two Column Layout -->
+        <div class="two-column">
+            <div class="column">
+                <!-- Personal Data Section -->
+                <section class="section">
+                    <h2>DATA PRIBADI >></h2>
+                    <div class="content-box">
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="nama.png" width="16" alt="Nama"> <span>Nama: Yadi Suryana</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="alamat.png" width="16" alt="Tempat Lahir"> <span>Tempat, tanggal lahir: Sumedang, 29 Agustus 2004</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="gender.png" width="16" alt="Jenis Kelamin"> <span>Jenis Kelamin: Laki-Laki</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="home.png" width="16" alt="Alamat"> <span>Alamat: Ds. Cibulakan Kec. Cimanggung Kab. Sumedang</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="agama.png" width="16" alt="Agama"> <span>Agama: Islam</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="flag.png" width="16" alt="Kewarganegaraan"> <span>Kewarganegaraan: Indonesia</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 8px;">
+                                <img src="status.png" width="16" alt="Status"> <span>Status: Belum Menikah</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Education Section -->
+                <section class="section">
+                    <h2>PENDIDIKAN >></h2>
+                    <div class="content-box">
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>SDN Cikandang (2012 - 2017)</li>
+                            <li>SMP 314 Parakanmuncang (2017 - 2020)</li>
+                            <li>MA Wasilatul Huda (2020 - 2023)</li>
+                            <li>Universitas Ma'soem (2023 - Sekarang)</li>
+                        </ul>
+                    </div>
+                </section>
+                
+
+                <!-- Hobbies Section -->
+                <section class="section">
+                    <h2>HOBI >></h2>
+                    <div class="content-box">
+                        <ul >
+                            <li><img src="book.png" width="16" alt="Buku"> Membaca Buku</li>
+                            <li><img src="badminton.png" width="16" alt="Badminton"> Badminton</li>
+                            <li><img src="game.png" width="16" alt="Game"> Game</li>
+                            <li><img src="music.png" width="16" alt="Musik"> Mendengarkan Musik</li>
+                        </ul>
+                    </div>
+                </section>
+                
+            </div>
+
+            <div class="column">
+                <!-- Skills Section -->
+                <section class="section">
+                    <h2>KEAHLIAN >></h2>
+                    <div class="content-box">
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>HTML & CSS</li>
+                            <li>JavaScript</li>
+                            <li>React & Next.js</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>Java</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Organization Section -->
+                <section class="section">
+                    <h2>ORGANISASI >></h2>
+                    <div class="content-box">
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>Sekretaris OSIS MA Wasilatul Huda</li>
+                            <li>Anggota Pramuka MA Wasilatul Huda</li>
+                            <li>Pengurus Organisasi Karsawasa (Karya Santri Wasilatul Huda) Wasilatul Huda</li>
+                            <li>Anggota Ekstrakulikuler Badminton Wasilatul Huda</li>
+                            <li>Anggota HIMA FKOM Universitas Ma'soem</li>
+                            <li>Anggota UKM Badminton Universitas Ma'soem</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Services Section -->
+                <section class="section">
+                    <h2>LAYANAN >></h2>
+                    <div class="content-box">
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>UI/UX Design</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
-
-        <div class="content">
-            <div class="left">
-                <div class="box">
-                    <h2><i class="fas fa-address-book"></i> Kontak</h2>
-                    <p><i class="fas fa-phone"></i> +123-456-7890</p>
-                    <p><i class="fas fa-envelope"></i> hello@reallygreatsite.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Anywhere St, Any City</p>
-                </div>
-
-                <div class="box">
-                    <h2><i class="fas fa-briefcase"></i> Pengalaman</h2>
-                    <ul>
-                        <li><strong>Desainer Grafis</strong> - Studio Borcelle (2017 - 2020)</li>
-                        <li><strong>Desainer Grafis</strong> - Studio Larana (2017 - 2020)</li>
-                        <li><strong>Desainer Grafis</strong> - Studio Liceria (2017 - 2020)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="box">
-                    <h2><i class="fas fa-user"></i> Tentang Saya</h2>
-                    <p>Desainer grafis yang percaya diri, bersemangat, dan kreatif dengan pengalaman di bidang media cetak dan digital.</p>
-                </div>
-
-                <div class="box">
-                    <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
-                    <ul>
-                        <li><strong>Universitas Borcelle</strong> - Jurusan Desain Grafis (2010 - 2014)</li>
-                        <li><strong>Universitas Larana</strong> - Jurusan Desain Grafis (2010 - 2014)</li>
-                        <li><strong>Universitas Liceria</strong> - Jurusan Desain Grafis (2010 - 2014)</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="skills">
-            <h2><i class="fas fa-tools"></i> Keahlian</h2>
-            <div class="skill-list">
-                <span>Desainer Grafis</span>
-                <span>Bahasa Inggris</span>
-                <span>Fotografi</span>
-            </div>
-        </div>
+        <hr>
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>HUBUNGI SAYA</h2>
+            <p>Email: ydisryna@gmail.com</p>
+            <p>Phone:+628 9630 024 907</p>
+        </section>
     </div>
 </body>
 </html>
